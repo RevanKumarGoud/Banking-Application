@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "user": [
+    {
+      "id": 2,
+      "Name": "Ram",
+      "Email": "revankumargoudkurmindla@gmail.com",
+      "Password": "19999",
+      "Contact": "999222837"
+    },
+    {
+      "id": 3,
+      "Name": "revan",
+      "Email": "lingagoud1279@gmail.com",
+      "Password": "199928",
+      "Contact": "992819882"
+    }
+  ]
+}
