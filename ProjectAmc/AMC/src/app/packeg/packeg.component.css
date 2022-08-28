@@ -1,0 +1,74 @@
+.jumbotron{
+    background-color: rgb(28, 72, 117);
+}
+h5{
+    padding: 20px;
+}
+.r{
+    margin-left:50%;
+    margin-top: -18%;
+}
+h3{
+    text-align: center;
+    color: hotpink;
+    padding-bottom: 50px;
+    font-size: 3rem;
+}
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 19px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .Chose{
+    vertical-align:inherit;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-top: 10%;
+  }
+  .rm{
+    padding: 10%;
+  }
+  h1{
+    margin-top: 40%;
+  }
