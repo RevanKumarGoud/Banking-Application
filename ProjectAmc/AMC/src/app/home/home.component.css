@@ -1,5 +1,5 @@
 img{
-    width: 100%;
+    width: 75%;
     height: 100%;
     margin-left: 0%;
     border-radius: 0% 0px 40% 50%;
@@ -8,8 +8,10 @@ img{
 .settop{
     margin-top: -19%;
     margin-left: 56%;
+    width: 45rem;
 }
 h5{
     color:hotpink;
-    padding: 50px;
+    margin-top: -20px; padding: 20px;
+    background-color: blue;
 }

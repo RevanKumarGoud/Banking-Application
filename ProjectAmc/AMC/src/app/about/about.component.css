@@ -135,13 +135,14 @@ border-bottom: 1px solid #999; */
 }
 h3{
     text-align: center;
-    padding: 10%;
+    padding: 8rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #b4a2ac;
 }
 footer{
     background-color: #421a31;
-    padding-top: 3%;
+    padding-top: 7%;
+    padding:10px;
 }
 h2{
     font-weight: bold;
@@ -149,6 +150,9 @@ h2{
     color: #ddd;
 }
 ul{
-    color: #20668f;
-    text-align: center;
+    color: #e7eef2;
+    margin-left: 30rem;
+}
+.ff{
+    padding:60px;
 }
