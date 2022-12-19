@@ -1,0 +1,50 @@
+<div id="container">
+<div id="header"> 
+<div id="avatharSection">
+<div class="picture">
+    <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-user-image-179582665.jpg" width="10%" />
+</div>
+<div class="nameSection">Rewon</div>
+</div>
+<div class="actionButtons">
+    
+</div>
+</div>
+<div id="body">
+    <div
+    class="message"
+    [ngClass]="{ me: message.me }"
+    *ngFor="let message of conversation.messages"
+  >
+  <div class="messageContent">
+    {{ message.body }}
+    <div class="time">{{ message.time }}</div>
+  </div>
+ </div>
+</div>
+<div id="footer">
+    <div id="smileyIcon">
+      <i
+        (click)="emojiPickerVisible = !emojiPickerVisible"
+        class="fa fa-smile-o"
+      ></i>
+      <emoji-mart
+        (emojiClick)="emojiClicked($event)"
+        *ngIf="emojiPickerVisible"
+        style="position: absolute; bottom: 50px"
+        [darkMode]="false"
+        title="Pick your emoji…"
+        emoji="point_up"
+      ></emoji-mart>
+    </div>
+    <div id="textarea">
+      <textarea
+        [(ngModel)]="message"
+        (keyup.enter)="submitMessage($event)"
+      ></textarea>
+    </div>
+    <div id="micIcon">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ79vR_X8Z32MBHYaYI0bm4eOmGjy8kIi-yuuc4tqoKZsroDkCsHiZh0sj35GR5ZvlnKRk&usqp=CAU" width="100%" height="50%">
+    </div>
+  </div>
+</div>

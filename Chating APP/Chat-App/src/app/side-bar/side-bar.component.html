@@ -1,0 +1,56 @@
+<div id="sidebar">
+  <div id="row1">
+    <div id="sidebarHeader">
+      <div class="avatarContainer">
+        <i class="fa fa-2x fa-whatsapp" style="color: rgb(163, 163, 87);"></i>
+      </div>
+      <div class="actionsContainer">
+          <i class="fa fa-comment" style="color: rgb(177, 177, 163);"></i>
+          <i class="fa fa-circle-o-notch" style="color: rgb(177, 177, 163);"></i>
+          <i class="fa-2x" style="color: rgb(177, 177, 163);">...</i>
+      </div>
+    </div>
+    <div id="searchBox">
+      <i width="19" class="fa fa-search"></i>
+      <input
+        [(ngModel)]="searchText"
+        type="text"
+        placeholder="Search or start the new chat"
+      />
+    </div>
+  </div>
+
+  <div id="sidebarContent">
+    <!-- <div id="noConversations">All chats are archived</div> -->
+
+    <div
+      class="conversation"
+      *ngFor="
+        let conversation of !searchText ? conversations : filteredConversations
+      "
+      (click)="conversationClicked.emit(conversation)"
+    >
+      <div class="picture">
+        <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-user-image-179582665.jpg" />
+      </div>
+      <div class="content">
+        <div class="conversationHeader">
+          <div class="name">{{ conversation.name }}</div>
+          <div class="time">{{ conversation.time }}</div>
+        </div>
+        <div class="message">
+          <i
+            *ngIf="!conversation.latestMessageRead"
+            class="fa fa-check"
+          ></i>
+          <img
+            *ngIf="conversation.latestMessageRead"
+            src="https://t2.gstatic.com/images?q=tbn:ANd9GcSGc_zh8cqAxEI4Rx1dhQpDA5kozZtHvvH6GXxfMKUbO1k5Z9Fl"
+            width="7%"
+            />
+          {{ conversation.latestMessage }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
