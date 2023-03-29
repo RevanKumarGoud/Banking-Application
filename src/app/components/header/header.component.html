@@ -1,0 +1,14 @@
+
+<nav class="navbar navbar">
+  <ul class="horizontal">
+    <li 
+      *ngFor="let state of states"
+      (click)="setStateAsActive(state)">
+      <a [class.active]="state === activeState">
+        {{ state }}
+      </a>
+    </li>
+  </ul>
+</nav>
+<h1>Hello User</h1>
+<app-mainpage></app-mainpage>

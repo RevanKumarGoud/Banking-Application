@@ -1,0 +1,20 @@
+p{
+    color: #716b6b;
+
+}
+.card{
+    width: 50%;
+    margin: 28px;
+
+}
+.float{
+    float: right;
+    margin-top: -2.8rem;
+}
+.side{
+    margin-left: 52rem;
+    margin-top: -27rem;
+}
+h6{
+    color:black
+}
