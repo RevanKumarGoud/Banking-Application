@@ -1,70 +1,131 @@
-
-<div class="padding">
-    <p>All personal Accounts</p>
+<!-- <div class="padding">
+  <p>All personal Accounts</p>
 </div>
-<div class="card bg-info-subtle R">
-    <div class="card-body">
-        <p class="card-text">Checking Account - 1234</p>
-        <span class="float">$20,000</span>
-      </div>
+<div class="card bg-info-subtle R"  *ngFor="let A of products">
+  <div class="card-body">
+    <p class="card-text">{{A.accountType}}</p>
+    <span class="float">{{A.accountBalance}}</span>
   </div>
-<div class="card bg-info-subtle R ">
-    <div class="card-body">
-        <p class="card-text">Savings account - 4567</p>
-        <span class="float">$1000</span>
+</div>
+<section class="side">
+  <div class="row row-cols-1 row-cols">
+    <div class="card bg-info-subtle" style="max-width: 10rem">
+      <div class="card-body text-primary">
+        <h6 class="card-title">Open a new account</h6>
       </div>
+    </div>
+    <div class="card bg-info-subtle" style="max-width: 10rem">
+      <div class="card-body text-primary">
+        <h6 class="card-title">Financial Tool</h6>
+      </div>
+    </div>
   </div>
-<div class="card bg-info-subtle R">
-    <div class="card-body">
-        <p class="card-text">Credit Card 1 - 8910</p>
-        <span class="float">$5300</span>
+  <div class="row row-cols-1 row-cols">
+    <div class="card bg-info-subtle" style="max-width: 10rem">
+      <div class="card-body text-primary">
+        <h6 class="card-title">Budgeting Tips</h6>
       </div>
+    </div>
+    <div class="card bg-info-subtle" style="max-width: 10rem">
+      <div class="card-body text-primary">
+        <h6 class="card-title">Book an Appoinment</h6>
+      </div>
+    </div>
   </div>
-<div class="card bg-info-subtle R">
-    <div class="card-body">
-        <p class="card-text">Credit Card 2 - 8910</p>
-        <span class="float">$5300</span>
+  <div class="row row-cols-1 row-cols">
+    <div class="card bg-info-subtle" style="max-width: 10rem">
+      <div class="card-body text-primary">
+        <h6 class="card-title">Contact Us</h6>
+        <br />
       </div>
+    </div>
+    <div class="card bg-info-subtle" style="max-width: 10rem">
+      <div class="card-body text-primary">
+        <h6 class="card-title">Ask Adam</h6>
+        <br />
+      </div>
+    </div>
   </div>
-
-  <section class="side">
-    <div class="row row-cols-1 row-cols">
-        <div class="card bg-info-subtle" style="max-width: 10rem;">
-            <div class="card-body text-primary">
-              <h6 class="card-title">Open a new account</h6>
-            </div>
-          </div>
-        <div class="card bg-info-subtle " style="max-width: 10rem;">
-            <div class="card-body text-primary">
-              <h6 class="card-title">Financial Tool</h6>
-            </div>
-          </div>
+</section> -->
+<div class="row m-3 g-4">
+  <div class="col-sm-4">
+    <div class="d-flex justify-content-between userdetails"> 
+      <p class="fw-bold">Univarsal Card</p> <p class="fw-lighter" type="submit" class="btn btn">Active</p> 
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-mastercard-logo-png-vector-download-19.png" width="40" class="float-end">
+        <p>Current Balance</p>
+        <h5>5,750.20 USD</h5>&nbsp;&nbsp;&nbsp;
+        <div class="py-sm-5">
+          <p class="float-sm-start">5282  3456  7890  1289</p>
+        <p class="Right">09/25</p>
+        </div>
       </div>
-    <div class="row row-cols-1 row-cols">
-        <div class="card bg-info-subtle" style="max-width: 10rem;">
-            <div class="card-body text-primary">
-                <h6 class="card-title">Budgeting Tips</h6>
-            </div>
-          </div>
-        <div class="card bg-info-subtle" style="max-width: 10rem;">
-            <div class="card-body text-primary">
-                <h6 class="card-title">Book an Appoinment </h6>
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="d-flex justify-content-between  userdetails"> 
+      <p class="fw-bold">Debit card</p> <p class="fw-lighter" type="submit" class="btn btn">Active</p> 
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/visa-logo-svg-vector.svg" width="50" class="float-end">
+        <p>Current Balance</p>
+        <h5>8,000.00 USD</h5>&nbsp;&nbsp;&nbsp;
+        <div class="py-sm-5">
+          <p class="float-sm-start">4000  1134  5672  1098</p>
+        <p class="Right">09/25</p>
+        </div>
       </div>
-    <div class="row row-cols-1 row-cols">
-        <div class="card bg-info-subtle" style="max-width: 10rem;">
-            <div class="card-body text-primary">
-                <h6 class="card-title">Contact Us</h6><br>
-            </div>
-          </div>
-        <div class="card bg-info-subtle" style="max-width: 10rem;">
-            <div class="card-body text-primary">
-                <h6 class="card-title">Ask Adam</h6><br>
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="d-flex justify-content-between  userdetails"> 
+      <p class="fw-bold">Debit current card</p> <p class="fw-lighter" type="submit" class="btn btn">Active</p> 
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-mastercard-logo-png-vector-download-19.png" width="40" class="float-end">
+        <p>Current Balance</p>
+        <h5>3,349.75 USD</h5>&nbsp;&nbsp;&nbsp;
+        <div class="py-sm-5">
+          <p class="float-sm-start">5289 2110 5079 1026</p>
+        <p class="Right">09/25</p>
+        </div>
       </div>
-  </section>
-  
-
-
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="d-flex justify-content-between  userdetails"> 
+      <p class="fw-bold">Credit card</p> <p class="fw-lighter" type="submit" class="btn btn">Active</p> 
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-mastercard-logo-png-vector-download-19.png" width="40" class="float-end">
+        <p>Current Balance</p>
+        <h5>10.50 USD</h5>&nbsp;&nbsp;&nbsp;
+        <div class="py-sm-5">
+          <p class="float-sm-start">5282 1146 1933 0092</p>
+           <p class="Right">09/25</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="d-flex justify-content-between  userdetails"> 
+      <p class="fw-bold">Virtual card</p> <p class="fw-lighter" type="submit" class="btn btn">Active</p> 
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-mastercard-logo-png-vector-download-19.png" width="40" class="float-end">
+        <p>Current Balance</p>
+        <h5>0.20 USD</h5>&nbsp;&nbsp;&nbsp;
+        <div class="py-sm-5">
+          <p class="float-sm-start">5282 8273  0385  2057</p>
+        <p class="Right">09/25</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

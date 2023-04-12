@@ -1,20 +1,15 @@
-p{
-    color: #716b6b;
-
+.btn{
+    background-color: #f2f1ef;
+    border-radius: .7rem;
+}
+.float-sm-start{
+    float: left;
+}
+.Right{
+    float: right;
 }
 .card{
-    width: 50%;
-    margin: 28px;
+border-radius:1rem;
+padding: 0px 30px 0px 20px;
+}
 
-}
-.float{
-    float: right;
-    margin-top: -2.8rem;
-}
-.side{
-    margin-left: 52rem;
-    margin-top: -27rem;
-}
-h6{
-    color:black
-}

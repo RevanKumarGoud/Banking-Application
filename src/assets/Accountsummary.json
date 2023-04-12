@@ -1,0 +1,17 @@
+[{
+    "accountType":"Checking Account - 1234",
+    "accountBalance":"$25,000"
+  },
+   {
+    "accountType":"Savings account - 4567",
+    "accountBalance":"$8,000"
+  },
+   {
+    "accountType":"Credit Card 1 - 8910",
+    "accountBalance":"$11,000"
+  },
+    {
+    "accountType":"Credit Card 2 - 8910",
+    "accountBalance":"$5900"
+  }
+  ]
